@@ -16,6 +16,8 @@ project "Shared"
        "%{prj.location}/**.cpp" 
    }
 
+   defines { "MSG_MACRO_TITLE"}
+
    filter "configurations:Debug"
       defines { "DEBUG" }
       symbols "On"
@@ -65,6 +67,8 @@ project "Test"
        "%{prj.location}/**.h", 
        "%{prj.location}/**.cpp" 
    }
+
+   defines { "MSG_MACRO_TITLE"}
 
    includedirs
    {
